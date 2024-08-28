@@ -1,11 +1,15 @@
-import { Button } from "./components/ui/button";
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SalesAdminLanding from "./app/sales/SalesLanding/SalesAdminLanding";
 
 function App() {
   return (
-    <>
-      <div className="p-4 bg-blue-500 text-white">Hello, Tailwind!</div>
-      <Button className='m-4 w-36 active:scale-90 duration-300 transition-all'>Button</Button>
-    </>
+    <Router>
+      <Routes>
+        {/* Update the path to "*" to handle all sub-routes */}
+        <Route path="/*" element={<SalesAdminLanding />} />
+      </Routes>
+    </Router>
   );
 }
 
