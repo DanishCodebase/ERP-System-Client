@@ -5,11 +5,13 @@ import OperationLanding from "./app/operations/OperationLandingPage/OperationLan
 
 function App() {
   return (
-    <Routes>
-      {/* Update the path to "*" to handle all sub-routes */}
-      <Route path="/*" element={<SalesAdminLanding />} />
-      <Route path="/operations" element={<OperationLanding />} />
-    </Routes>
+    <Router>
+      <Routes>
+        {/* Update the path to "*" to handle all sub-routes */}
+        <Route path="/*" element={<SalesAdminLanding />} />
+        <Route path="/operations" element={<OperationLanding />} />
+      </Routes>
+    </Router>
   );
 }
 
