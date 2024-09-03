@@ -12,7 +12,7 @@ export default function Navbar() {
               <span className="text-xl font-bold text-gray-800">TsTechnos</span>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              {['Dashboard', 'All Positions', 'Client'].map((tab) => (
+              {['Dashboard', 'All Positions', 'Client','Operations'].map((tab) => (
                 <NavLink
                   key={tab}
                   to={tab.toLowerCase().replace(/\s+/g, '-')}

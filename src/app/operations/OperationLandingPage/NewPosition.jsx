@@ -9,6 +9,8 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import AssignPopUp from "./AssignPopUp";
+import RejectPopUp from "./RejectPopUp";
 
 const newPosition = [
   {
@@ -31,26 +33,25 @@ const NewPosition = () => {
               050824 PHP DEVELOPER @ SJ
             </TableCell>
             <TableCell className="text-right">
-              <Button className="mr-3">Assign to Sales</Button>
-              <Button variant="destructive">Disapprove</Button>
+              <AssignPopUp />
+              <RejectPopUp />
             </TableCell>
           </TableRow>
           <TableRow>
             <TableCell className="font-medium">
-              050824 PHP DEVELOPER @ SJ
+              050824 JAVA DEVELOPER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <Button className="mr-3">Assign to Sales</Button>
-              <Button variant="destructive">Disapprove</Button>
+              <AssignPopUp />
+              <RejectPopUp />
             </TableCell>
           </TableRow>
           <TableRow>
             <TableCell className="font-medium">
-              050824 PHP DEVELOPER @ SJ
+              050824 GRAPHIC DESIGNER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <Button className="mr-3">Assign to Sales</Button>
-              <Button variant="destructive">Disapprove</Button>
+              <Button className="bg-violet-500 hover:bg-violet-400">View</Button>
             </TableCell>
           </TableRow>
         </TableBody>

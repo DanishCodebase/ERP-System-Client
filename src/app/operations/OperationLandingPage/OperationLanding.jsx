@@ -1,8 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../../sales/SalesLanding/NavBarSales";
-import Interviews from "../../sales/SalesLanding/Interviews";
-import PositionsTable from "../../sales/SalesLanding/PositionsTable";
 import NewPosition from "./NewPosition";
 
 const OperationLanding = () => {

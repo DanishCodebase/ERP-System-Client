@@ -13,6 +13,7 @@ export default function NavBar() {
     { to: '/dashboard', label: 'Dashboard' },
     { to: '/positions', label: 'All Positions' },
     { to: '/clients', label: 'Clients' },
+    { to: '/operations', label: 'Operations' },
   ];
 
   return (
