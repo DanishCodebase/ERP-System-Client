@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import AssignPopUp from "./AssignPopUp";
-import RejectPopUp from "./RejectPopUp";
 import { Link } from "react-router-dom";
 
 const newPosition = [
@@ -21,7 +14,7 @@ const newPosition = [
   },
 ];
 
-const NewPosition = () => {
+const ActivePosition = () => {
   return (
     <>
       <h2 className="text-lg mb-5 font-semibold">New Positions</h2>
@@ -32,8 +25,9 @@ const NewPosition = () => {
               050824 PHP DEVELOPER @ SJ
             </TableCell>
             <TableCell className="text-right">
-              <AssignPopUp />
-              <RejectPopUp />
+              <Button className="bg-indigo-500 hover:bg-indigo-400">
+                View Candidate's Profiles
+              </Button>
             </TableCell>
           </TableRow>
           <TableRow>
@@ -41,8 +35,9 @@ const NewPosition = () => {
               050824 JAVA DEVELOPER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <AssignPopUp />
-              <RejectPopUp />
+              <Button className="bg-indigo-500 hover:bg-indigo-400">
+                View Candidate's Profiles
+              </Button>
             </TableCell>
           </TableRow>
           <TableRow>
@@ -51,7 +46,7 @@ const NewPosition = () => {
             </TableCell>
             <TableCell className="text-right">
               <Button className="bg-indigo-500 hover:bg-indigo-400">
-                <Link to={"/operationex"}>View</Link>
+                View Candidate's Profiles
               </Button>
             </TableCell>
           </TableRow>
@@ -61,4 +56,4 @@ const NewPosition = () => {
   );
 };
 
-export default NewPosition;
+export default ActivePosition;

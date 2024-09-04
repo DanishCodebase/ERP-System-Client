@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { Menu, X } from "lucide-react";
 
-export default function NavBar() {
+export default function NavBar({ menuItems }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const menuItems = [
-    { to: '/dashboard', label: 'Dashboard' },
-    { to: '/positions', label: 'All Positions' },
-    { to: '/clients', label: 'Clients' },
-    { to: '/operations', label: 'Operations' },
-  ];
+  // const menuItems = [
+  //   { to: '/dashboard', label: 'Dashboard' },
+  //   { to: '/positions', label: 'All Positions' },
+  //   { to: '/clients', label: 'Clients' },
+  //   { to: '/operations', label: 'Operations' },
+  // ];
 
   return (
     <nav className="bg-white border-b border-gray-200 shadow-sm">
@@ -22,7 +22,9 @@ export default function NavBar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0">
-              <span className="font-bold text-lg sm:text-xl text-gray-800">Sales Department</span>
+              <span className="font-bold text-lg sm:text-xl text-gray-800">
+                Sales Department
+              </span>
             </Link>
           </div>
           <div className="hidden md:block">

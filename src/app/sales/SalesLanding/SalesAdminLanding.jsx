@@ -8,7 +8,14 @@ import PositionsTable from "./PositionsTable";
 const SalesAdminLanding = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Navbar />
+      <Navbar
+        menuItems={[
+          { to: "/dashboard", label: "Dashboard" },
+          { to: "/all-positions", label: "All Positions" },
+          { to: "/clients", label: "Clients" },
+          { to: "/operations", label: "Operations" },
+        ]}
+      />
       <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
           <Routes>
@@ -21,12 +28,17 @@ const SalesAdminLanding = () => {
                 </>
               }
             />
-            <Route path="dashboard" element={ <>
+            <Route
+              path="dashboard"
+              element={
+                <>
                   <Interviews />
                   <PositionsTable />
-                </>} />
+                </>
+              }
+            />
             <Route path="all-positions" element={<PositionsTable />} />
-            <Route path="client" element={<div>Client Component</div>} />
+            <Route path="clients" element={<div>Client Component</div>} />
           </Routes>
         </div>
       </main>
