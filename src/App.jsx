@@ -11,7 +11,7 @@ function App() {
         {/* Update the path to "*" to handle all sub-routes */}
         <Route path="/*" element={<SalesAdminLanding />} />
         <Route path="/operations" element={<OperationLanding />} />
-        <Route path="/operationex" element={<OperationExecutive />} />
+        <Route path="/operationex/*" element={<OperationExecutive />} />
       </Routes>
     </Router>
   );
