@@ -3,6 +3,7 @@ import Navbar from "../../sales/SalesLanding/NavBarSales";
 import ActivePosition from "./ActivePosition";
 import { Route, Routes } from "react-router-dom";
 import CandidateProfiles from "./CandidateProfiles";
+import AddCandidate from "./AddCandidate";
 
 const OperationExecutive = () => {
   return (
@@ -20,6 +21,7 @@ const OperationExecutive = () => {
             <Route path="/" element={<ActivePosition />} />
             <Route path="/dashboard" element={<ActivePosition />} />
             <Route path="/candidate-profiles" element={<CandidateProfiles />} />
+            <Route path="/add-candidate" element={<AddCandidate />} />
           </Routes>
         </div>
       </main>

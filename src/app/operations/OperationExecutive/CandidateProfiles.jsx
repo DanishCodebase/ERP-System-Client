@@ -1,6 +1,8 @@
 import React from "react";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
+import AddCandidate from "./AddCandidate";
+import { Link } from "react-router-dom";
 
 const CandidateProfiles = () => {
   return (
@@ -13,13 +15,14 @@ const CandidateProfiles = () => {
           <p>050824 PHP DEVELOPER @ SJ</p>
         </div>
         <div className="space-x-2">
-          <Button
-            variant="outline"
-            className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
-            size="sm"
-          >
-            Add New Profile
-          </Button>
+          <Link to="/operationex/add-candidate">
+            <Button
+              variant="outline"
+              className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+            >
+              Add New Profile
+            </Button>
+          </Link>
         </div>
       </div>
       <Table className="border mt-5">
@@ -30,7 +33,6 @@ const CandidateProfiles = () => {
               <Button
                 variant="outline"
                 className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
-                size="sm"
               >
                 View Profile
               </Button>
@@ -42,7 +44,6 @@ const CandidateProfiles = () => {
               <Button
                 variant="outline"
                 className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
-                size="sm"
               >
                 View Profile
               </Button>
@@ -54,7 +55,6 @@ const CandidateProfiles = () => {
               <Button
                 variant="outline"
                 className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
-                size="sm"
               >
                 View Profile
               </Button>
