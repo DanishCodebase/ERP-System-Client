@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import AssignPopUp from "./AssignPopUp";
 import RejectPopUp from "./RejectPopUp";
@@ -50,9 +45,11 @@ const NewPosition = () => {
               050824 GRAPHIC DESIGNER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
-                <Link to={"/operationex"}>View</Link>
-              </Button>
+              <Link to={"/operationex"}>
+                <Button className="bg-indigo-500 hover:bg-indigo-400">
+                  View
+                </Button>
+              </Link>
             </TableCell>
           </TableRow>
         </TableBody>

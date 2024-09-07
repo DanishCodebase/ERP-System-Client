@@ -25,31 +25,37 @@ const CandidateProfiles = () => {
       <Table className="border mt-5">
         <TableBody>
           <TableRow>
-            <TableCell className="font-medium">
-              Fahad Ansari
-            </TableCell>
+            <TableCell className="font-medium">Fahad Ansari</TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
+              <Button
+                variant="outline"
+                className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                size="sm"
+              >
                 View Profile
               </Button>
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">
-              Sariq Sohrab
-            </TableCell>
+            <TableCell className="font-medium">Sariq Sohrab</TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
+              <Button
+                variant="outline"
+                className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                size="sm"
+              >
                 View Profile
               </Button>
             </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className="font-medium">
-              Hanzala Tafzeel
-            </TableCell>
+            <TableCell className="font-medium">Hanzala Tafzeel</TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
+              <Button
+                variant="outline"
+                className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                size="sm"
+              >
                 View Profile
               </Button>
             </TableCell>

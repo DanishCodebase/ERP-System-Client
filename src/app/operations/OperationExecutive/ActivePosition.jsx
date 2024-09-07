@@ -25,9 +25,15 @@ const ActivePosition = () => {
               050824 PHP DEVELOPER @ SJ
             </TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
-                View Candidate's Profiles
-              </Button>
+              <Link to="/operationex/candidate-profiles">
+                <Button
+                  variant="outline"
+                  className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                  size="sm"
+                >
+                  View Candidate's Profiles
+                </Button>
+              </Link>
             </TableCell>
           </TableRow>
           <TableRow>
@@ -35,9 +41,15 @@ const ActivePosition = () => {
               050824 JAVA DEVELOPER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
-                View Candidate's Profiles
-              </Button>
+              <Link to="/operationex/candidate-profiles">
+                <Button
+                  variant="outline"
+                  className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                  size="sm"
+                >
+                  View Candidate's Profiles
+                </Button>
+              </Link>
             </TableCell>
           </TableRow>
           <TableRow>
@@ -45,9 +57,15 @@ const ActivePosition = () => {
               050824 GRAPHIC DESIGNER @ TS
             </TableCell>
             <TableCell className="text-right">
-              <Button className="bg-indigo-500 hover:bg-indigo-400">
-                View Candidate's Profiles
-              </Button>
+              <Link to="/operationex/candidate-profiles">
+                <Button
+                  variant="outline"
+                  className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+                  size="sm"
+                >
+                  View Candidate's Profiles
+                </Button>
+              </Link>
             </TableCell>
           </TableRow>
         </TableBody>
