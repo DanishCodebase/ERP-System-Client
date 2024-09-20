@@ -4,6 +4,8 @@ import Navbar from "./NavBarSales";
 import { Routes, Route } from "react-router-dom";
 import Interviews from "./Interviews";
 import PositionsTable from "./PositionsTable";
+import ProfileDetail from "../Profile/ProfileDetail";
+import Clients from "../Client/Clients";
 
 const SalesAdminLanding = () => {
   return (
@@ -38,7 +40,9 @@ const SalesAdminLanding = () => {
               }
             />
             <Route path="all-positions" element={<PositionsTable />} />
-            <Route path="clients" element={<div>Client Component</div>} />
+            <Route path="clients" element={<Clients />} />
+            <Route path="profile-detail" element={<ProfileDetail />} />
+            <Route path="profile" element={<ProfileDetail />} />
           </Routes>
         </div>
       </main>

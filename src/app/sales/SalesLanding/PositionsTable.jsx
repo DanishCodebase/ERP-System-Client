@@ -1,13 +1,21 @@
 // src/components/PositionsTable.jsx
-import React from 'react';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Button } from '@/components/ui/button';
-import { Eye,Plus, List } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Button } from "@/components/ui/button";
+import { Eye, Plus, List } from "lucide-react";
 
 const positionsData = [
   {
-    id: '050824 PHP DEVELOPER @ SJ',
-    status: 'On Process',
+    id: "050824 PHP DEVELOPER @ SJ",
+    status: "On Process",
     profileSubmitted: 4,
     pendingScreening: 2,
     profilesSent: 0,
@@ -17,19 +25,27 @@ const positionsData = [
 export default function PositionsTable() {
   return (
     <>
-     <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold">Active Positions Status</h2>
-            <div className="space-x-2">
-              <Button variant="outline" size="sm">
-                <Plus className="h-4 w-4 mr-2" />
-                Create new Position
-              </Button>
-              <Button variant="outline" size="sm">
-                <List className="h-4 w-4 mr-2" />
-                View All Positions
-              </Button>
-            </div>
-          </div>
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-lg font-semibold">Active Positions Status</h2>
+        <div className="space-x-2">
+          <Button
+            variant="outline"
+            className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+            size="sm"
+          >
+            <Plus className="h-4 w-4 mr-2" />
+            Create new Position
+          </Button>
+          <Button
+            variant="outline"
+            className="text-indigo-500 hover:text-indigo-400 hover:bg-white border-indigo-500"
+            size="sm"
+          >
+            <List className="h-4 w-4 mr-2" />
+            View All Positions
+          </Button>
+        </div>
+      </div>
       <Table>
         <TableHeader>
           <TableRow>
@@ -54,9 +70,11 @@ export default function PositionsTable() {
               <TableCell>{position.pendingScreening}</TableCell>
               <TableCell>{position.profilesSent}</TableCell>
               <TableCell>
-                <Button variant="ghost" size="sm">
-                  <Eye className="h-4 w-4" />
-                </Button>
+                <Link to="/profile-detail">
+                  <Button variant="ghost" size="sm">
+                    <Eye className="h-4 w-4" />
+                  </Button>
+                </Link>
               </TableCell>
             </TableRow>
           ))}
