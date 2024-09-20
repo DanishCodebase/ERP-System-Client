@@ -6,6 +6,7 @@ import Interviews from "./Interviews";
 import PositionsTable from "./PositionsTable";
 import ProfileDetail from "../Profile/ProfileDetail";
 import Clients from "../Client/Clients";
+import ClientPage from "../Client/ClientPage";
 
 const SalesAdminLanding = () => {
   return (
@@ -43,6 +44,7 @@ const SalesAdminLanding = () => {
             <Route path="clients" element={<Clients />} />
             <Route path="profile-detail" element={<ProfileDetail />} />
             <Route path="profile" element={<ProfileDetail />} />
+            <Route path="client" element={<ClientPage />} />
           </Routes>
         </div>
       </main>

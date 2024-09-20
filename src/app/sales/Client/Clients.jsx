@@ -25,7 +25,7 @@ const ProfileDetail = () => {
               TS
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
+              <Link to="/client">
                 <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
                   View Positions
                 </Button>
@@ -38,7 +38,7 @@ const ProfileDetail = () => {
               TS
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
+              <Link to="/client">
                 <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
                   View Positions
                 </Button>
@@ -51,7 +51,7 @@ const ProfileDetail = () => {
               TS
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
+              <Link to="/client">
                 <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
                   View Positions
                 </Button>
