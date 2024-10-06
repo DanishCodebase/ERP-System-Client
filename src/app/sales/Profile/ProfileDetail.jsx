@@ -2,6 +2,7 @@ import React from "react";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import CandidatePopUp from "./CandidatePopUp";
 
 const ProfileDetail = () => {
   return (
@@ -9,10 +10,7 @@ const ProfileDetail = () => {
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-lg font-semibold">050824 PHP DEVELOPER @ SJ</h2>
         <div className="space-x-2">
-          <Button
-            className="bg-indigo-500 hover:bg-indigo-400"
-            size="sm"
-          >
+          <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
             Send All Profiles to Client
           </Button>
         </div>
@@ -25,7 +23,7 @@ const ProfileDetail = () => {
               Interview Scheduled
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
+              <Link to="">
                 <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
                   View Profile
                 </Button>
@@ -38,7 +36,7 @@ const ProfileDetail = () => {
               Feedback Awaited
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
+              <Link to="">
                 <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
                   View Profile
                 </Button>
@@ -51,11 +49,7 @@ const ProfileDetail = () => {
               Added to top profile
             </TableCell>
             <TableCell className="text-right">
-              <Link to="/operationex/candidate-profiles">
-                <Button className="bg-indigo-500 hover:bg-indigo-400" size="sm">
-                  View Profile
-                </Button>
-              </Link>
+              <CandidatePopUp />
             </TableCell>
           </TableRow>
         </TableBody>

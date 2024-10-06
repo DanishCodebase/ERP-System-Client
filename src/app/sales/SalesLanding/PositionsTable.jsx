@@ -70,7 +70,7 @@ export default function PositionsTable() {
               <TableCell>{position.pendingScreening}</TableCell>
               <TableCell>{position.profilesSent}</TableCell>
               <TableCell>
-                <Link to="/profile-detail">
+                <Link to="/profile">
                   <Button variant="ghost" size="sm">
                     <Eye className="h-4 w-4" />
                   </Button>

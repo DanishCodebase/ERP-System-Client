@@ -13,9 +13,9 @@ const SalesAdminLanding = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar
         menuItems={[
-          { to: "/dashboard", label: "Dashboard" },
-          { to: "/all-positions", label: "All Positions" },
-          { to: "/clients", label: "Clients" },
+          { to: "./dashboard", label: "Dashboard" },
+          { to: "./all-positions", label: "All Positions" },
+          { to: "./clients", label: "Clients" },
           { to: "/operations", label: "Operations" },
         ]}
       />
@@ -42,9 +42,9 @@ const SalesAdminLanding = () => {
             />
             <Route path="all-positions" element={<PositionsTable />} />
             <Route path="clients" element={<Clients />} />
-            <Route path="profile-detail" element={<ProfileDetail />} />
             <Route path="profile" element={<ProfileDetail />} />
             <Route path="client" element={<ClientPage />} />
+            {/* <Route path="viewprofile" element={<CandidatePopUp />} /> */}
           </Routes>
         </div>
       </main>
