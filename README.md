@@ -1,1 +1,1 @@
-https://erp-system-client.vercel.app/
+https://crm-client-system.netlify.app
